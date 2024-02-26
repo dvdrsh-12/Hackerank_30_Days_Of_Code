@@ -13,7 +13,6 @@ class Result {
         double tax = (tax_percent / 100.0) * meal_cost;
 
         total_cost = meal_cost + tip + tax;
-
         int totalcost = (int) Math.round(total_cost);
 
         System.out.println(totalcost);
