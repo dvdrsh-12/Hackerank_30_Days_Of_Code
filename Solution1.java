@@ -14,6 +14,6 @@ public class Solution1 {
         System.out.println(str);
 
         sc.close();
-
+        
     }
 }

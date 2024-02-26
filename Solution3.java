@@ -17,6 +17,7 @@ class Result {
         int totalcost = (int) Math.round(total_cost);
 
         System.out.println(totalcost);
+        
     }
 }
 
@@ -32,5 +33,6 @@ public class Solution3 {
         Result.solve(meal_cost, tip_percent, tax_percent);
 
         sc.close();
+
     }
 }
