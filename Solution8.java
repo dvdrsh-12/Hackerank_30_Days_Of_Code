@@ -1,42 +1,35 @@
 
-// Day:1 - Dictionaries and Maps.
+// Day:7 - Arrays.
 
 import java.util.*;
 
 public class Solution8 {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        HashMap<String, Integer> phone_book = new HashMap<>();
-        int n = sc.nextInt();
+        int N = sc.nextInt();
+        int[] arr = new int[1000];
 
-        if (n >= 1 && n <= 100000) {
+        if (N >= 1 && N <= 1000) {
 
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < N; i++) {
 
-                String name = sc.next();
-                int phone = sc.nextInt();
+                int temp = sc.nextInt();
 
-                phone_book.put(name, phone);
-
+                if (temp >= 1 && temp <= 10000) {
+                    arr[i] = temp;
+                } else {
+                    System.out.println("Enter element ,1 <= element <= 10000");
+                }
             }
 
-            while (sc.hasNext()) {
-
-                String search = sc.next();
-
-                if (phone_book.containsKey(search)) {
-                    System.out.println(search + "=" + phone_book.get(search));
-                } else {
-                    System.out.println("Not found");
-                }
-
+            for (int i = N - 1; i >= 0; i--) {
+                System.out.print(arr[i] + " ");
             }
 
         } else {
-            System.out.println("Enter n ,1 <= n <= 100000");
+            System.out.println("Enter N ,1 <= N <= 1000");
         }
 
         sc.close();
