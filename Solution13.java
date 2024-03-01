@@ -56,7 +56,7 @@ class Student extends Person {
         }
 
         return grade;
-        
+
     }
 }
 
@@ -72,13 +72,20 @@ public class Solution13 {
         int numScores = scan.nextInt();
         int[] testScores = new int[numScores];
 
-        for (int i = 0; i < numScores; i++) {
-            testScores[i] = scan.nextInt();
-        }
+        if (firstName.length() >= 1 && firstName.length() <= 10 && lastName.length() >= 1 && lastName.length() <= 10
+                && id >= 1000000 && id <= 9999999) {
 
-        Student s = new Student(firstName, lastName, id, testScores);
-        s.printPerson();
-        System.out.println("Grade: " + s.calculate(numScores));
+            for (int i = 0; i < numScores; i++) {
+                testScores[i] = scan.nextInt();
+            }
+
+            Student s = new Student(firstName, lastName, id, testScores);
+            s.printPerson();
+            System.out.println("Grade: " + s.calculate(numScores));
+
+        } else {
+            System.out.println("Enter firstname, lastname in length, 1 <= length <= 10");
+        }
 
         scan.close();
 
