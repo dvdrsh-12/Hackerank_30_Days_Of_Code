@@ -15,7 +15,7 @@ class Node {
 
 }
 
-class Solution {
+class Solution16 {
 
     public static Node insert(Node head, int data) {
 
