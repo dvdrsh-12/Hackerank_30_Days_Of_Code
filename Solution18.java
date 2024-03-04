@@ -1,5 +1,5 @@
 
-// Day:16 - Exceptions-String to Integer.
+// Day:17 - More Exceptions.
 
 import java.util.*;
 
@@ -41,7 +41,7 @@ public class Solution18 {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-            
+
         }
 
         in.close();
