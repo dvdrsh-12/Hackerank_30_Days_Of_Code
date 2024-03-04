@@ -33,14 +33,18 @@ class Solution {
 
         int n = scan.nextInt();
 
-        AdvancedArithmetic myCalculator = new Calculator();
+        if (n >= 1 && n <= 1000) {
+            AdvancedArithmetic myCalculator = new Calculator();
 
-        int sum = myCalculator.divisorSum(n);
-        System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName());
-        System.out.println(sum);
+            int sum = myCalculator.divisorSum(n);
+            System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName());
+            System.out.println(sum);
+
+        } else {
+            System.out.print("Enter n ,1 <= n <= 1000");
+        }
 
         scan.close();
-        
+
     }
 }
-
