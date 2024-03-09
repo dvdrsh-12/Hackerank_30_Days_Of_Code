@@ -15,7 +15,7 @@ class Node {
 
 }
 
-class Solution {
+public class Solution23 {
 
     public static int getHeight(Node root) {
 
@@ -65,6 +65,6 @@ class Solution {
         System.out.println(height);
 
         sc.close();
-        
+
     }
 }

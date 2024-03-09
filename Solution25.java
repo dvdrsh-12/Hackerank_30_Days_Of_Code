@@ -15,7 +15,7 @@ class Node {
 
 }
 
-class Solution {
+public class Solution25 {
 
     public static Node removeDuplicates(Node head) {
 
@@ -82,6 +82,6 @@ class Solution {
         display(head);
 
         sc.close();
-        
+
     }
 }

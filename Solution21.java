@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-class Solution21 {
+public class Solution21 {
 
     public static void main(String[] args) {
 

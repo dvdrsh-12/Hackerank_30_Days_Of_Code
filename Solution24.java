@@ -17,7 +17,7 @@ class Node {
 
 }
 
-class Solution {
+public class Solution24 {
 
     static void levelOrder(Node root) {
 

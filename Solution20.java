@@ -25,7 +25,7 @@ class Calculator implements AdvancedArithmetic {
 
 }
 
-class Solution {
+public class Solution20 {
 
     public static void main(String[] args) {
 
